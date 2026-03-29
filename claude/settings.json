@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip3 list:*)",
+      "Bash(python3:*)",
+      "Bash(curl -s \"http://localhost:3000/api/crawl?url=https://news.ycombinator.com\")",
+      "Bash(curl -s \"http://localhost:3000/api/crawl?url=https://angular.io\")",
+      "Bash(curl -s \"http://localhost:3000/api/crawl?url=https://notarealurlxyz123456.com\")",
+      "Bash(curl -s http://localhost:4201)",
+      "Bash(npm run:*)",
+      "Bash(crontab -l)",
+      "Bash(chmod +x /home/greg/Documents/GitHub/Builtwith/scripts/crawl-nightly.sh)",
+      "Bash(ls /home/greg/Documents/GitHub/Builtwith/next.config*)",
+      "Bash(cat /home/greg/Documents/GitHub/Builtwith/next.config*)",
+      "Bash(npm install:*)",
+      "Bash(npm info:*)",
+      "Bash(/usr/bin/python3 --version)",
+      "Read(//usr/bin/**)",
+      "Bash(npm config:*)",
+      "Bash(npm_config_python=/usr/bin/python3.12 npm install better-sqlite3@9)",
+      "Bash(npm_config_python=/usr/bin/python3.12 npm install --save-dev @types/better-sqlite3)",
+      "Bash(ls /home/greg/Documents/GitHub/Builtwith/*.md)",
+      "Bash(node --import tsx scripts/migrate-snapshots.ts)",
+      "Bash(node --import tsx scripts/crawl.ts https://vercel.com https://nextjs.org https://wordpress.org https://shopify.com https://hubspot.com https://webflow.com https://ghost.org)",
+      "Bash(pkill -f \"next start\")",
+      "Bash(pkill -f \"next-server\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3003/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3003/snapshots)",
+      "Read(//tmp/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3003/crawl)",
+      "Read(//home/greg/Documents/GitHub/**)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Read(//home/greg/.claude/**)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo:*)",
+      "Bash(pandoc --version)"
+    ]
+  },
+  "effortLevel": "high"
+}

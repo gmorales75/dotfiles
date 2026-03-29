@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "gdrive": {
+      "command": "mcp-server-gdrive",
+      "args": [],
+      "env": {
+        "GDRIVE_CREDENTIALS_PATH": "/home/greg/.npm-global/lib/node_modules/.gdrive-server-credentials.json"
+      }
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${GITHUB_MCP_TOKEN}"
+      }
+    }
+  }
+}
