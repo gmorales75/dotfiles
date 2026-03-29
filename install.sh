@@ -20,4 +20,11 @@ echo "Linked settings.json"
 envsubst < "$DOTFILES/claude/.mcp.json.template" > "$HOME/.claude/.mcp.json"
 echo "Generated .mcp.json"
 
+# Claude slash commands — symlink each command file
+mkdir -p "$HOME/.claude/commands"
+for cmd in "$DOTFILES/claude/commands/"*.md; do
+  ln -sf "$cmd" "$HOME/.claude/commands/$(basename "$cmd")"
+  echo "Linked command: $(basename "$cmd")"
+done
+
 echo "Done. Restart Claude Code to pick up changes."
